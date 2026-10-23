@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Azizy Hakimi — Portofolio & Open Source</title>
+  <meta name="description" content="Kumpulan proyek dan tugas kuliah Muhammad Azizy Hakimi, D3 Teknik Elektronika, Politeknik Negeri Padang. Terbuka untuk dipelajari semua orang.">
+  <meta property="og:title" content="Muhammad Azizy Hakimi — Portofolio & Open Source">
+  <meta property="og:description" content="Proyek dan tugas kuliah D3 Teknik Elektronika, Politeknik Negeri Padang.">
+  <meta property="og:image" content="assets/img/kampus-2.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top"><img src="assets/img/logo-deganika25.jpg" alt="Logo Deganika '25"><span>azizy<b>.dev</b></span></a>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#komunitas">Komunitas</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag mono">// open source · tugas &amp; proyek kuliah</p>
+        <h1>Muhammad<br>Azizy <span class="hl">Hakimi</span></h1>
+        <p class="lead">Mahasiswa D3 Teknik Elektronika, Jurusan Teknik Elektro, Politeknik Negeri Padang. Di sini saya mengumpulkan semua proyek dan tugas kuliah saya secara terbuka, supaya bisa dipelajari, dipakai ulang, dan dikembangkan siapa saja.</p>
+        <div class="chips">
+          <span class="chip mono">NIM 2501041004</span>
+          <span class="chip mono">Kelas 1D · D3 EC</span>
+          <span class="chip mono">Deganika '25</span>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#proyek">Lihat proyek</a>
+          <a class="btn" href="#kontak">Hubungi saya</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/kampus-2.jpg" alt="Muhammad Azizy Hakimi di area kampus">
+        <span class="badge mono">⚡ Politeknik Negeri Padang</span>
+      </div>
+    </section>
+
+    <section id="tentang" class="section">
+      <h2><span class="mono num">01</span> Tentang</h2>
+      <div class="about">
+        <p>Halo, saya <strong>Muhammad Azizy Hakimi</strong>, mahasiswa program studi <strong>D3 Teknik Elektronika</strong>, Jurusan Teknik Elektro, Politeknik Negeri Padang. Website ini adalah rumah untuk seluruh tugas dan proyek perkuliahan saya: rangkaian, program, laporan praktikum, sampai proyek akhir.</p>
+        <p>Semua yang saya unggah bersifat <strong>open source</strong>. Silakan pelajari, tiru, perbaiki, dan beri masukan. Belajar elektronika paling seru kalau dikerjakan bareng.</p>
+        <dl class="facts">
+          <div><dt>Nama</dt><dd>Muhammad Azizy Hakimi</dd></div>
+          <div><dt>NIM</dt><dd class="mono">2501041004</dd></div>
+          <div><dt>Kampus</dt><dd>Politeknik Negeri Padang</dd></div>
+          <div><dt>Jurusan</dt><dd>Teknik Elektro</dd></div>
+          <div><dt>Prodi</dt><dd>D3 Teknik Elektronika</dd></div>
+          <div><dt>Kelas</dt><dd>1D D3 EC · Deganika '25</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="proyek" class="section">
+      <h2><span class="mono num">02</span> Proyek &amp; Tugas</h2>
+      <p class="sub">Daftar tugas dan proyek kuliah. Klik tombol untuk membuka kode, skema, atau laporannya.</p>
+      <div class="filters" id="filters" role="tablist" aria-label="Filter kategori"></div>
+      <div class="grid" id="projects"></div>
+      <p class="note mono">Cara menambah proyek: edit array <code>PROJECTS</code> di file <code>script.js</code>.</p>
+    </section>
+
+    <section id="galeri" class="section">
+      <h2><span class="mono num">03</span> Galeri</h2>
+      <p class="sub">Beberapa momen di kampus dan bersama teman-teman. Klik foto untuk memperbesar.</p>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="komunitas" class="section">
+      <h2><span class="mono num">04</span> Komunitas</h2>
+      <div class="community">
+        <figure class="card logo-card">
+          <img src="assets/img/logo-deganika25.jpg" alt="Logo Keluarga Elektronika Deganika '25">
+          <figcaption>
+            <h3>Deganika '25</h3>
+            <p>Keluarga Elektronika angkatan 2025. Kelas <strong>1D D3 Teknik Elektronika (EC)</strong>, Politeknik Negeri Padang.</p>
+          </figcaption>
+        </figure>
+        <figure class="card poster-card">
+          <img src="assets/img/poster-robotik.jpg" alt="Poster Robotik UKM Politeknik Negeri Padang" data-zoom>
+          <figcaption>
+            <h3>Robotik</h3>
+            <p>Bagian dari Unit Kegiatan Mahasiswa Robotik Politeknik Negeri Padang dengan semangat <em>#WePlayWithTechnology</em>.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2><span class="mono num">05</span> Kontak &amp; Kolaborasi</h2>
+      <p class="sub">Punya saran, menemukan bug di proyek saya, atau mau kerja bareng? Hubungi saya.</p>
+      <div class="contact" id="contact"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Muhammad Azizy Hakimi · NIM 2501041004 · D3 Teknik Elektronika, Politeknik Negeri Padang</p>
+    <p class="mono">Open source · dibuat dengan HTML, CSS &amp; JS</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="close" aria-label="Tutup">×</button>
+    <img alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
